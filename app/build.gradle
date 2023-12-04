@@ -86,6 +86,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:$version_recyclerview"
 
     // Material design components
+    // Use material design library
     implementation "com.google.android.material:material:$version_material"
 
     // Client for retrieving location
