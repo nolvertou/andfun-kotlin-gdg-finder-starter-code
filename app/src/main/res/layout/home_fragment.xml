@@ -34,12 +34,15 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintDimensionRatio="4:3"/>
 
+                <!-- If we change from style to textAppearance, Android will apply the headline5
+                     style before the theme, so the fonts in our theme will override the fonts
+                     specified by headline5 -->
                 <TextView
                     android:id="@+id/title"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    style="@style/TextAppearance.Title"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
                     android:text="@string/about_google_developer_groups"
                     app:layout_constraintEnd_toStartOf="@+id/end_grid"
                     app:layout_constraintStart_toStartOf="@+id/start_grid"
@@ -60,7 +63,7 @@
                         android:id="@+id/subtitle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        style="@style/TextAppearance.Subtitle"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
                         android:text="@string/gdgs_are"
                         android:layout_marginTop="13dp"
                         app:layout_constraintStart_toEndOf="@id/start_grid"
